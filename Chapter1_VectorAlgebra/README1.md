@@ -31,9 +31,9 @@ static const XMVECTORF32 g_vHalfVector = { 0.5f, 0.5f, 0.5f, 0.5f };
 
 - XMVECTOR 인스턴스를 인수로 함수를 호출할 때, 효율성을 위해 스택이 아닌 SSE/SSE2 레지스터를 통해 함수에 전달해야 한다. 이를 플랫폼 독립적으로 처리하기 위해, XMVECTOR 매개변수에 FXMVECOTR, GXMVECTOR, HXMVECTOR 형식을 지정해야한다. 
 
-1~3번째 XMVECTOR 매개변수에는 FXMVECTOR,
+1,2,3번째 XMVECTOR 매개변수에는 FXMVECTOR,
 4번째 XMVECTOR 매개변수에는 GXMVECTOR,
-5~6번째 XMVECTOR에는 HXMVECTOR,
+5,6번째 XMVECTOR에는 HXMVECTOR,
 그 이상의 XMVECTOR 매개변수에는 CXMVECTOR를 사용한다.
 
 ```C++
